@@ -1,0 +1,247 @@
+*{
+    text-decoration: none;
+}
+
+header{
+   background-color: #fff;
+   width: 100%;
+   height: 100px;
+}
+header .header-info{
+   font-family: Catamaran;
+   font-size: 24px;
+   font-weight: 300;
+   color: rgb(17, 17, 17);
+   text-transform: uppercase;
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   padding:20px 0px;
+}
+header nav ul{
+   display: block;
+margin: 0 auto;
+width:fit-content;
+}
+header .dropdown{
+   float: left;
+   overflow: hidden;
+}
+header .dropdown .dropbtn{
+   font-size: 16px;
+   border: none;
+   outline: none;
+   color: white;
+ background-color: inherit;
+ font-family: inherit; 
+ margin: 0; 
+
+}
+.nav a:hover, .dropdown:hover .dropbtn {
+   background-color: #f2f2f2;
+ }
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #fff;
+   min-width: 100px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ .dropdown-content a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+header .dropdown .dropright{
+    float: left;
+   overflow: hidden;
+}
+header .dropdown .dropright .dropbtn1{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+ 
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+ 
+ }
+ .nav a:hover, .dropdown:hover .dropbtn .dropright:hover .dropbtn1 {
+    background-color: #f2f2f2;
+  }
+  .droprightcontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 100%;
+    top:0%;
+    margin-left: 0.125rem;
+  }
+  .dropdownrightcontent a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdownrightcontent a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content .dropright:hover .droprightcontent{
+    display: block;
+  }
+header nav ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
+}
+
+header nav ul li a{
+   font-family: Catamaran;
+   font-size: 16px;
+   color: rgb(17, 17, 17);
+   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px){
+   header .header-info{
+       margin: 31px 0;
+       text-align: left;
+       line-height: 38px;
+       padding: 0 20px 0 40px;
+       border-right: 3px solid #111;
+       float: left;
+   }
+   header nav ul{
+   margin: 20px 0;
+   float: left;
+   }
+   header nav ul li{
+        display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 16px;
+   
+   
+   }
+   header nav ul li a{
+       font-family: Catamaran;
+       font-size: 16px;
+       color: rgb(17, 17, 17);
+       line-height: 60px;;
+   }
+   
+}
+
+
+/* index */
+.index-banner{
+   width: 100%;
+   height: calc(100vh - 160px);
+   background-image: url(https://cdn.pixabay.com/photo/2020/11/19/08/03/college-5757815_1280.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: table;
+}
+.vertical-center {
+   display: table-cell;
+   vertical-align: middle;
+}
+.index-banner h2 {
+   font-family: Catamaran;
+   font-size: 60px;
+   color: rgb(248, 244, 244);
+   text-align: center;
+   font-weight: 600;
+   text-shadow: 2px 2px 2px 8px #111;
+   line-height: 70px;
+
+}
+
+
+
+.index-banner h1 {
+   font-family: Cormorant Garamond;
+   font-size: 28px;
+   color: rgb(229, 229, 233);
+   text-align: center;
+   font-weight: 100;
+   font-style: italic;
+   text-shadow: 2px 2px 2px 8px #111;
+   line-height: 40px;
+}
+
+.index-links div {
+   margin: 16px 16px 0;
+   width: calc(100% - 32px);
+   height: 100px;
+   background-color: #f0e5e5;
+
+
+}
+.index-links div h3 {
+   font-family: Catamaran;
+   font-size: 28px;
+   color: #111;
+   text-align: center;
+   font-weight: 600;
+   text-transform: uppercase;
+   line-height: 100px;
+
+}
+
+/* footer */
+footer{
+   width: calc(100% - 80px);
+   padding: 40px 40px ;
+   margin-top: 20px;
+   background-color: #111;
+   overflow: hidden;
+}
+footer ul{
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+
+}
+footer ul li{
+   display: block;
+   list-style: none;
+   
+}
+footer ul li a{
+   font-family: Catamaran;
+   font-size: 24px;
+   color:#fff;
+   line-height: 40px;
+
+   
+}
+
+.footer-sm{
+   width: 50px;
+   float: right;
+
+}
+.footer-sm img{
+   width: 100%;
+   margin-bottom: 10px;
+
+}
