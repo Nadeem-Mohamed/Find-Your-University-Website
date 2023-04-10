@@ -28,6 +28,7 @@ header .dropdown{
    overflow: hidden;
 }
 header .dropdown .dropbtn{
+   font-family: Catamaran;
    font-size: 16px;
    border: none;
    outline: none;
@@ -49,6 +50,7 @@ header .dropdown .dropbtn{
    z-index: 1;
  }
  .dropdown-content a {
+   font-family: Catamaran;
    float: none;
    color: black;
    padding: 12px 16px;
@@ -67,6 +69,7 @@ header .dropdown .dropright{
    overflow: hidden;
 }
 header .dropdown .dropright .dropbtn1{
+   font-family: Catamaran;
     font-size: 16px;
     border: none;
     outline: none;
@@ -92,6 +95,7 @@ header .dropdown .dropright .dropbtn1{
     margin-left: 0.125rem;
   }
   .dropdownrightcontent a {
+   font-family: Catamaran;
     float: none;
     color: black;
     padding: 12px 16px;
