@@ -57,12 +57,34 @@
 
         </nav>
         </p>
+        <script>
+            // Get the dropdown button and its content
+var dropdown = document.getElementsByClassName("dropdown");
+var i;
+
+// Add a click event listener to each dropdown button
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+// Add the animation to the header
+var header = document.getElementsByTagName("header")[0];
+header.classList.add("animate__animated", "animate__fadeIn");
+
+        </script>    
     </header>
     <main>
         <section class="index-banner">
             <div class="vertical-center">
                 <h2>Find Your University<br>Now </h2>
-
             </div>
         </section>
         <section class="index-links" >
@@ -74,11 +96,36 @@
             <a href="about.html">
             <div class="index-boxlink-square">
                 <h3>About</h3>
-                
             </div></a>
-            
         </section>
     </main>
+    
+    <script>
+        const indexBanner = document.querySelector('.index-banner');
+const bannerText = indexBanner.querySelector('h2');
+
+indexBanner.addEventListener('click', () => {
+  bannerText.classList.toggle('animated', 'bounce');
+});
+
+indexLinks.addEventListener('mouseenter', () => {
+  indexBoxes.forEach(box => {
+    box.classList.add('animated', 'pulse');
+    bannerText.classList.add('animated', 'jello');
+  });
+});
+
+indexLinks.addEventListener('mouseleave', () => {
+  indexBoxes.forEach(box => {
+    box.classList.remove('animated', 'pulse');
+    bannerText.classList.remove('animated', 'jello');
+  });
+});
+
+      </script>
+    
+    
+    
     <footer>
         <ul class ="footer-links-main">
             <li><a href="index.html">Home</a></li>
